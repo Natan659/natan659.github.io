@@ -1970,3 +1970,105 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+/* =========================================================
+   AMÉLIORATION CONTACT / RENDEZ-VOUS
+========================================================= */
+
+.form-intro {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 18px;
+
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid var(--line);
+}
+
+.form-number {
+    color: var(--terracotta);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.form-intro h3 {
+    margin: 0;
+
+    font-family: var(--serif);
+
+    font-size: 28px;
+    font-weight: 500;
+
+    line-height: 1.1;
+}
+
+.form-intro p {
+    margin: 7px 0 0;
+
+    color: var(--ink-soft);
+
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* SELECT */
+
+.field select {
+    width: 100%;
+
+    padding: 14px 0;
+
+    border: 0;
+    border-bottom: 1px solid #cfc6bc;
+
+    outline: none;
+
+    background: transparent;
+
+    color: var(--ink);
+
+    font-size: 14px;
+
+    border-radius: 0;
+
+    cursor: pointer;
+
+    appearance: none;
+}
+
+.field select:focus {
+    border-bottom-color: var(--terracotta);
+}
+
+
+/* CONTACT LINKS */
+
+.contact-info a {
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.contact-info a:hover {
+    transform: translateX(4px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 550px) {
+
+    .form-intro {
+        grid-template-columns: 32px 1fr;
+        gap: 12px;
+    }
+
+    .form-intro h3 {
+        font-size: 24px;
+    }
+
+}
