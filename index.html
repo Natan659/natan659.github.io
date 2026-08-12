@@ -595,121 +595,205 @@
 
 
     <!-- =========================
-         CONTACT
-    ========================== -->
+     CONTACT / RENDEZ-VOUS
+========================== -->
 
-    <section class="contact section-space" id="contact">
+<section class="contact section-space" id="contact">
 
-        <div class="contact-heading">
+    <div class="contact-heading">
 
-            <div class="small-label">
-                05 · Contact
-            </div>
-
-            <h2>
-                Et si on<br>
-                <em>commençait</em> par parler ?
-            </h2>
-
-            <p>
-                Une question, une première envie d'échanger
-                ou simplement besoin d'informations ?
-                Écrivez-moi.
-            </p>
-
-
-            <div class="contact-info">
-
-                <a href="tel:+33612345678">
-                    06 12 34 56 78
-                </a>
-
-                <a href="mailto:gnatan.gauthier@gmail.com">
-                    gnatan.gauthier@gmail.com
-                </a>
-
-                <span>
-                    10 rue Armand Carrel · 59000 Lille
-                </span>
-
-            </div>
-
+        <div class="small-label">
+            05 · Contact
         </div>
 
+        <h2>
+            Et si on<br>
+            <em>commençait</em> par parler ?
+        </h2>
 
-        <div class="contact-form">
+        <p>
+            Une question, une première envie d'échanger
+            ou simplement envie de prendre rendez-vous ?
+            Écrivez-moi ou contactez-moi directement.
+        </p>
 
-            <form
-                action="https://formspree.io/f/xaewjnle"
-                method="POST"
+        <div class="contact-info">
+
+            <a href="tel:+33612345678">
+                📞 06 12 34 56 78
+            </a>
+
+            <a href="mailto:gnatan.gauthier@gmail.com">
+                ✉️ gnatan.gauthier@gmail.com
+            </a>
+
+            <a
+                href="https://wa.me/33612345678"
+                target="_blank"
+                rel="noopener noreferrer"
             >
+                💬 Écrire sur WhatsApp
+            </a>
 
-                <div class="field">
-
-                    <label for="nom">
-                        Votre nom
-                    </label>
-
-                    <input
-                        id="nom"
-                        type="text"
-                        name="nom"
-                        placeholder="Votre nom"
-                        autocomplete="name"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="field">
-
-                    <label for="email">
-                        Votre email
-                    </label>
-
-                    <input
-                        id="email"
-                        type="email"
-                        name="email"
-                        placeholder="vous@email.com"
-                        autocomplete="email"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="field">
-
-                    <label for="message">
-                        Votre message
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        placeholder="Bonjour Natan..."
-                        required
-                    ></textarea>
-
-                </div>
-
-
-                <button
-                    type="submit"
-                    class="button button-dark submit-button"
-                >
-                    Envoyer le message
-                    <span>↗</span>
-                </button>
-
-            </form>
+            <span>
+                📍 10 rue Armand Carrel · 59000 Lille
+            </span>
 
         </div>
 
-    </section>
+    </div>
 
+
+    <div class="contact-form">
+
+        <div class="form-intro">
+
+            <span class="form-number">
+                01
+            </span>
+
+            <div>
+                <h3>
+                    Demander un rendez-vous
+                </h3>
+
+                <p>
+                    Remplissez ce formulaire et Natan
+                    pourra revenir vers vous.
+                </p>
+            </div>
+
+        </div>
+
+
+        <form
+            action="https://formspree.io/f/xaewjnle"
+            method="POST"
+        >
+
+            <div class="field">
+
+                <label for="nom">
+                    Votre nom
+                </label>
+
+                <input
+                    id="nom"
+                    type="text"
+                    name="nom"
+                    placeholder="Votre nom"
+                    autocomplete="name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="email">
+                    Votre email
+                </label>
+
+                <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="vous@email.com"
+                    autocomplete="email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="telephone">
+                    Votre téléphone
+                </label>
+
+                <input
+                    id="telephone"
+                    type="tel"
+                    name="telephone"
+                    placeholder="06 12 34 56 78"
+                    autocomplete="tel"
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="motif">
+                    Motif de votre demande
+                </label>
+
+                <select
+                    id="motif"
+                    name="motif"
+                    required
+                >
+
+                    <option value="">
+                        Choisissez une option
+                    </option>
+
+                    <option value="premier-rendez-vous">
+                        Premier rendez-vous
+                    </option>
+
+                    <option value="bilan-naturopathique">
+                        Bilan naturopathique
+                    </option>
+
+                    <option value="alimentation">
+                        Alimentation
+                    </option>
+
+                    <option value="equilibre-vitalite">
+                        Équilibre & vitalité
+                    </option>
+
+                    <option value="information">
+                        Simple demande d'information
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="field">
+
+                <label for="message">
+                    Votre message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Bonjour Natan, je souhaiterais..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="button button-dark submit-button"
+            >
+                Envoyer ma demande
+                <span>↗</span>
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
 </main>
 
 
